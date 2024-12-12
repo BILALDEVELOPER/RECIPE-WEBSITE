@@ -1,0 +1,738 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* TOP */
+
+.topline {
+    width: 100%;
+    background-color: #054B55;
+    color: #f8cbd2;
+}
+
+.fa-heart {
+    font-size: 13px !important;
+}
+
+.topline p {
+    font-family: "Garnet Capitals";
+}
+
+.topline a {
+    text-decoration: none;
+    color: white;
+    font-family: "Garnet Capitals";
+}
+
+.close {
+    font-size: 18px;
+    color: aliceblue;
+}
+
+/* NAVBAR */
+
+.navbar {
+    border-bottom: 1px solid #054B55;
+}
+
+.navbar ul li a {
+    color: black;
+    font-family: "Garnet Capitals";
+    font-size: 1rem;
+}
+
+/* QUOTE */
+
+.quote .fonta {
+    font-family: "Arvo";
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 0.9rem;
+}
+
+.quote .fontb {
+    font-family: "Shadows Into Light";
+    font-size: 2rem;
+    word-spacing: 0.2rem;
+    color: #054B55;
+}
+
+/* MAIN */
+
+.main {
+    background-color: #fff8f9;
+}
+
+.img-container {
+    position: relative;
+}
+
+.img-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    /* Light white overlay */
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.img-container:hover::after {
+    opacity: 0.8;
+}
+
+.link {
+    font-family: "Arvo", serif;
+    /* Ensure font fallback */
+    font-size: 0.9rem;
+    /* Base font size */
+    color: white;
+    /* White text */
+    background-color: #f8cbd2;
+    /* Light pink background */
+    border: none;
+    /* Remove border */
+    padding: 7px 10px;
+    /* Compact padding */
+    position: absolute;
+    /* Absolute positioning */
+    top: 100%;
+    /* Adjusted for better placement */
+    right: 50%;
+    /* Center horizontally relative to parent */
+    transform: translate(50%, -50%);
+    /* Center perfectly */
+    text-align: center;
+    /* Center text alignment */
+}
+
+.link::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    /* Light white overlay */
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.img-container:hover .link::after {
+    opacity: 0.8;
+}
+
+/* Responsive styles for large screens (1200px to 1399px) */
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .link {
+        font-size: 0.8rem;
+        /* Moderate font size */
+        padding: 5px 8px;
+        /* Adjust padding */
+    }
+}
+
+/* Responsive styles for medium screens (992px to 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .link {
+        font-size: 0.8rem;
+        /* Moderate font size */
+        padding: 3px 3.4px;
+        /* Adjust padding */
+    }
+}
+
+/* Responsive styles for smaller screens (below 992px) */
+@media (max-width: 991px) {
+    .link {
+        font-size: 0.8rem;
+        /* Moderate font size */
+        padding: 3px 3.4px;
+        /* Adjust padding */
+    }
+}
+
+.circle {
+    overflow: hidden;
+    width: 6rem;
+    height: 6rem;
+}
+
+.circle img {
+    width: 100%;
+    height: 100%;
+}
+
+.another p {
+    font-family: "Garnet Capitals";
+    line-height: 1.2rem;
+    font-size: 0.9rem;
+    word-spacing: 0.1rem;
+    margin-top: 0.5rem;
+}
+
+.another a {
+    text-decoration: none;
+    color: black;
+}
+
+.search ::placeholder {
+    font-family: "Bitter";
+}
+
+.search input {
+    border: 1px solid #054B55;
+    border-radius: 0;
+    border-left: 0;
+}
+
+.links {
+    text-decoration: none;
+    color: white;
+    background-color: #054B55;
+    padding: 8px 15px;
+    /* Slightly wider padding for better appearance */
+    font-family: "Garnet Capitals", serif;
+    /* Ensure fallback font */
+    font-size: 1rem;
+    /* Standard font size */
+    display: inline-block;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.links:hover {
+    background-color: #036D73;
+    transform: scale(1.05);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1199px) {
+    .links {
+        font-size: 0.9rem;
+        /* Slightly smaller text for tablets */
+        padding: 7px 11px;
+        /* Adjust padding for smaller screens */
+    }
+}
+
+@media (max-width: 991px) {
+    .links {
+        font-size: 0.8rem;
+        /* Even smaller text for mobile */
+        padding: 3px 8px;
+        /* Smaller padding for mobile */
+    }
+}
+
+.search .icon {
+    border: 1px solid #054B55;
+    border-right: 0;
+    border-radius: 0;
+    background-color: white;
+}
+
+.color {
+    color: #054B55;
+}
+
+.font {
+    font-family: "Shadows Into Light";
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.font {
+    font-family: "Shadows Into Light";
+    font-size: 2rem;
+    /* Default font size */
+    font-style: italic;
+}
+
+/* Responsive font size adjustments */
+@media (max-width: 1200px) {
+    .font {
+        font-size: 1.8rem;
+        /* Slightly smaller font on large tablets and small desktops */
+    }
+}
+
+@media (max-width: 992px) {
+    .font {
+        font-size: 1.6rem;
+        /* Smaller font on medium-sized tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .font {
+        font-size: 1.4rem;
+        /* Smaller font on smaller tablets */
+    }
+}
+
+@media (max-width: 576px) {
+    .font {
+        font-size: 1.2rem;
+        /* Even smaller font for mobile devices */
+    }
+}
+
+#search {
+    width: 35%;
+}
+
+.height {
+    height: 100%;
+    /* Default height on smaller screens */
+}
+
+/* At the lg breakpoint (>= 992px), set height to 50% */
+@media (max-width: 992px) {
+    .height {
+        height: 75% !important;
+        /* Overriding for large screens */
+    }
+}
+
+/* MOBILE */
+
+.carousel-item {
+    overflow: hidden;
+}
+
+.heights {
+    object-fit: cover !important;
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .carousel-item {
+        height: 40vh;
+    }
+
+}
+
+@media only screen and (max-width: 557px) {
+
+    .carousel-item {
+        height: 30vh;
+    }
+
+}
+
+/* RECENT POST */
+
+.font-latest {
+    font-family: "Arvo";
+    font-size: 0.9rem;
+    color: #054B55;
+}
+
+.date {
+    font-family: "Arvo";
+    font-size: 0.8rem;
+    color: grey;
+    margin-bottom: 5px;
+}
+
+.para {
+    font-family: "Bitter";
+    font-weight: 300;
+    color: grey;
+}
+
+.recent a {
+    text-decoration: none;
+    color: black;
+    font-family: "Garnet Capitals";
+    color: #fcc6ce;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: 1s;
+}
+
+.recent a:hover {
+    color: black;
+    transition: 1s;
+}
+
+.anchor {
+    font-family: "Domaine Display";
+    font-weight: 500;
+}
+
+.view-buton {
+    font-family: "Garnet Capitals" !important;
+    background-color: #054B55 !important;
+    color: white !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    transition: 0.5s !important;
+    text-decoration: none !important;
+    font-size: 1.1rem !important;
+    width: 50%;
+    /* Default width for larger screens */
+    text-align: center;
+    /* Ensure text is centered */
+}
+
+.view-buton:hover {
+    background-color: black !important;
+    transition: 0.5s !important;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 992px) {
+
+    /* Tablets */
+    .view-buton {
+        width: 70%;
+        /* Slightly narrower for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Small devices */
+    .view-buton {
+        width: 90%;
+        /* Wider to fit smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+
+    /* Extra small devices */
+    .view-buton {
+        width: 100%;
+        /* Full width for very small screens */
+        font-size: 1rem !important;
+        /* Slightly smaller font */
+    }
+}
+
+.img-parent {
+    overflow: hidden;
+}
+
+.img-parent img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 1199px) {
+    .img-parent {
+        height: 20vh;
+    }
+
+    .anchor {
+        font-size: 1.8rem;
+    }
+
+    .recent a {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .img-parent {
+        height: 16vh;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .img-parent {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+/* ABOUT */
+
+.about .col {
+    background-color: rgb(216, 216, 216);
+    text-align: center;
+}
+
+.about .child1 {
+    height: 30rem;
+    overflow: hidden;
+}
+
+.child1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.font1 {
+    font-family: "Arvo", serif;
+    font-size: 1.4rem;
+    /* Adjusted for better visibility */
+    text-transform: uppercase;
+    color: #4d4d4d;
+}
+
+.font2 {
+    font-family: "Shadows Into Light", cursive;
+    font-size: 2.5rem;
+    text-transform: none;
+    color: #333;
+}
+
+.font3 {
+    font-family: "Bitter", serif;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #666;
+}
+
+.padds {
+    padding: 5rem !important;
+}
+
+.butn {
+    background-color: #4d4d4d;
+    color: white;
+    font-family: "Garnet Capitals", serif;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.butn:hover {
+    background-color: #383737;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.about .mt-4 {
+    margin-top: 2rem !important;
+}
+
+@media (max-width: 1400px) {
+
+    /* Adjust padding for text content */
+    .padds {
+        padding: 2rem 3rem !important;
+    }
+
+}
+
+
+@media (max-width: 1200px) {
+
+    /* Adjust padding for text content */
+    .padds {
+        padding: 2rem 2.3rem !important;
+    }
+
+    .font1 {
+        font-size: 1.2rem;
+    }
+
+    .font2 {
+        font-size: 2rem;
+    }
+
+    .font3 {
+        font-size: 1.1rem;
+    }
+
+    .about .child1 {
+        height: 27rem;
+    }
+
+}
+
+
+/* Ensure proper scaling for smaller devices */
+@media (max-width: 992px) {
+    .padds {
+        padding: 1rem 0.8rem !important;
+    }
+
+    .font1 {
+        font-size: 0.8rem;
+    }
+
+    .font2 {
+        font-size: 1.7rem;
+        margin: 0;
+    }
+
+    .font3 {
+        font-size: 0.9rem;
+    }
+
+    .about .child1 {
+        height: 20rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    /* Stack columns vertically */
+    .about .row {
+        flex-direction: column;
+    }
+
+    /* Adjust font sizes */
+    .font1 {
+        font-size: 1.2rem;
+    }
+
+    .font2 {
+        font-size: 1.2rem;
+    }
+
+    .font3 {
+        font-size: 1rem;
+    }
+
+    /* Center align text content */
+    .padds {
+        text-align: center;
+        padding: 2rem 1rem !important;
+    }
+
+    /* Resize button for smaller screens */
+    .butn {
+        padding: 8px 16px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+
+    /* Further reduce padding for extra small devices */
+    .padds {
+        padding: 1.5rem 0.5rem !important;
+    }
+
+    /* Scale fonts further */
+    .font1 {
+        font-size: 1rem;
+    }
+
+    .font2 {
+        font-size: 1rem;
+    }
+
+    .font3 {
+        font-size: 0.8rem;
+    }
+
+    /* Ensure images fit within container */
+    .child1 img {
+        max-height: 300px;
+    }
+}
+
+/* MOBILE */
+
+
+.font4 {
+    font-family: "Arvo", serif;
+    font-size: 1rem;
+    /* Adjusted for better visibility */
+    text-transform: uppercase;
+    color: #4d4d4d;
+}
+
+.font5 {
+    font-family: "Shadows Into Light", cursive;
+    font-size: 2.3rem;
+    text-transform: lowercase;
+    color: #333;
+}
+
+.font6 {
+    font-family: "Bitter", serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #666;
+}
+
+.butns {
+    background-color: #4d4d4d;
+    color: white;
+    font-family: "Garnet Capitals", serif;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.butns:hover {
+    background-color: #383737;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.coloe {
+    background-color: rgb(233, 233, 233);
+}
+
+/* POSTER */
+
+.bg {
+    background-color: #036D73;
+    padding: 20px 0;
+}
+
+.posterfont {
+    font-family: "Arvo", serif;
+    font-size: 1rem;
+    color: white;
+    text-transform: uppercase;
+}
+
+.icon {
+    color: #036D73;
+    font-size: 25px;
+}
+
+.paren {
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.paren:hover {
+    transform: scale(1.1);
+    background-color: #028a8f;
+}
+
+.paren i {
+    color: #036D73;
+    transition: color 0.3s ease;
+}
+
+.paren:hover i {
+    color: white;
+}
+
+.fan{
+    font-family: "Shadows Into Light";
+    font-size: 35px;
+}
+
+.fans{
+    font-family: "Arvo";
+    font-size: 16px;
+}
