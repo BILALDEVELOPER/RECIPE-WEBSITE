@@ -371,55 +371,39 @@
     font-weight: 500;
 }
 
-.view-buton {
-    font-family: "Garnet Capitals" !important;
-    background-color: #054B55 !important;
-    color: white !important;
-    border: 0 !important;
-    border-radius: 0 !important;
-    transition: 0.5s !important;
-    text-decoration: none !important;
-    font-size: 1.1rem !important;
-    width: 50%;
-    /* Default width for larger screens */
-    text-align: center;
-    /* Ensure text is centered */
-}
-
-.view-buton:hover {
-    background-color: black !important;
-    transition: 0.5s !important;
-}
-
-/* Media queries for responsiveness */
-@media (max-width: 992px) {
-
-    /* Tablets */
-    .view-buton {
-        width: 70%;
-        /* Slightly narrower for medium screens */
-    }
-}
-
-@media (max-width: 768px) {
-
-    /* Small devices */
-    .view-buton {
-        width: 90%;
-        /* Wider to fit smaller screens */
-    }
-}
-
-@media (max-width: 576px) {
-
-    /* Extra small devices */
-    .view-buton {
-        width: 100%;
-        /* Full width for very small screens */
-        font-size: 1rem !important;
-        /* Slightly smaller font */
-    }
-}
+/* Button Styling */
+.more .btn {
+    background-color: #036D73;  /* A bright orange background */
+    color: white;               /* White text color */
+    font-size: 1rem;            /* Set font size */
+    text-decoration: none;      /* Remove underline */
+    border-radius: 0;         /* Slightly rounded corners */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+    font-family: "Garnet Capitals";
+  }
+  
+  .more .btn:hover {
+    background-color: #00929a;  /* Darker orange background on hover */
+    transform: scale(1.05);      /* Slightly enlarge the button on hover */
+  }
+  
+  /* Button Padding */
+  .px-5 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
+  .py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  
+  /* Optional: Add custom spacing if needed */
+  .my-5 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  
 
 .img-parent {
     overflow: hidden;
@@ -479,7 +463,6 @@
 .font1 {
     font-family: "Arvo", serif;
     font-size: 1.4rem;
-    /* Adjusted for better visibility */
     text-transform: uppercase;
     color: #4d4d4d;
 }
@@ -522,17 +505,14 @@
 
 @media (max-width: 1400px) {
 
-    /* Adjust padding for text content */
     .padds {
         padding: 2rem 3rem !important;
     }
 
 }
 
-
 @media (max-width: 1200px) {
 
-    /* Adjust padding for text content */
     .padds {
         padding: 2rem 2.3rem !important;
     }
@@ -555,8 +535,6 @@
 
 }
 
-
-/* Ensure proper scaling for smaller devices */
 @media (max-width: 992px) {
     .padds {
         padding: 1rem 0.8rem !important;
@@ -583,12 +561,10 @@
 
 @media (max-width: 768px) {
 
-    /* Stack columns vertically */
     .about .row {
         flex-direction: column;
     }
 
-    /* Adjust font sizes */
     .font1 {
         font-size: 1.2rem;
     }
@@ -601,13 +577,11 @@
         font-size: 1rem;
     }
 
-    /* Center align text content */
     .padds {
         text-align: center;
         padding: 2rem 1rem !important;
     }
 
-    /* Resize button for smaller screens */
     .butn {
         padding: 8px 16px;
         font-size: 1rem;
@@ -616,12 +590,10 @@
 
 @media (max-width: 576px) {
 
-    /* Further reduce padding for extra small devices */
     .padds {
         padding: 1.5rem 0.5rem !important;
     }
 
-    /* Scale fonts further */
     .font1 {
         font-size: 1rem;
     }
@@ -634,19 +606,14 @@
         font-size: 0.8rem;
     }
 
-    /* Ensure images fit within container */
     .child1 img {
         max-height: 300px;
     }
 }
 
-/* MOBILE */
-
-
 .font4 {
     font-family: "Arvo", serif;
     font-size: 1rem;
-    /* Adjusted for better visibility */
     text-transform: uppercase;
     color: #4d4d4d;
 }
@@ -702,8 +669,15 @@
     font-size: 25px;
 }
 
+:root {
+    --paren-bg-color: white;
+    --paren-hover-bg-color: #00929a;
+    --paren-icon-color: #036D73;
+    --paren-hover-icon-color: white;
+}
+
 .paren {
-    background-color: white;
+    background-color: var(--paren-bg-color);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -711,28 +685,202 @@
     width: 40px;
     height: 40px;
     transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
 }
 
 .paren:hover {
     transform: scale(1.1);
-    background-color: #028a8f;
 }
 
 .paren i {
-    color: #036D73;
+    color: var(--paren-icon-color);
     transition: color 0.3s ease;
 }
 
-.paren:hover i {
-    color: white;
-}
-
-.fan{
+.fan {
     font-family: "Shadows Into Light";
     font-size: 35px;
 }
 
-.fans{
+.fans {
     font-family: "Arvo";
     font-size: 16px;
+}
+
+/* FOOTER */
+
+.custom{
+    border: 1px solid #036D73;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+    margin-bottom: 0;
+    font-family: "Bitter";
+    color: rgb(96, 96, 96);
+    font-size: 15px;
+}
+
+footer h5 {
+    font-family: "Arvo";
+    font-size: 15px;
+}
+
+footer .container {
+    padding: 0rem 8rem;
+}
+
+@media only screen and (max-width: 1200px) {
+    footer .container {
+        padding: 0rem 5rem;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    footer .container {
+        padding: 0rem 1rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    footer .container {
+        padding: 0rem 2rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    footer .container {
+        padding: 0rem 1rem;
+    }
+}
+
+.backg {
+    background-color: #036D73;
+}
+
+.inkkput .form-control {
+    border-radius: 0 !important;
+    margin-right: 5px;
+}
+
+.inkkput .form-control::placeholder {
+    font-family: "Bitter";
+}
+
+.inkkput .btn {
+    border-radius: 0 !important;
+    height: 100%;
+    white-space: nowrap;
+    background-color: #fcc6ce;
+    color: white;
+    border: 0;
+    font-family: "Garnet Capitals";
+    transition: 0.5s;
+}
+
+.inkkput .btn:hover {
+    background-color: #f7dade;
+    color: white;
+    font-family: "Garnet Capitals";
+    transition: 0.5s;
+}
+
+@media (max-width: 576px) {
+    .inkkput {
+        flex-direction: column;
+    }
+
+    .inkkput .form-control,
+    .inkkput .btn {
+        margin-bottom: 5px;
+        width: 100%;
+    }
+}
+
+.foannt {
+    font-size: 15px;
+}
+
+.imag1,
+.imag2 {
+    width: 100%;
+    /* Default for small screens */
+    max-width: 100%;
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+@media (min-width: 576px) {
+    .imag1 {
+        width: 15%;
+        /* Adjust for larger screens */
+    }
+
+    .imag2 {
+        width: 40%;
+        /* Adjust for larger screens */
+    }
+}
+
+@media (min-width: 992px) {
+    .imag1 {
+        width: 12%;
+        /* Original width for wider screens */
+    }
+
+    .imag2 {
+        width: 30%;
+        /* Original width for wider screens */
+    }
+}
+
+
+.iconnns {
+    font-size: 30px;
+    color: white;
+}
+
+.iconnns .boar {
+    border-radius: 50%;
+    background-color: #036D73;
+    padding: 0 0.5rem;
+    cursor: pointer;
+}
+
+.iconnns .boar:hover {
+    background-color: #818080;
+}
+
+.foant {
+    font-family: "Bitter";
+    font-size: 13px !important;
+    color: #6c6c6c;
+}
+
+.last a {
+    font-family: "Bitter";
+    font-size: 14px;
+}
+
+.footer-logo {
+    max-width: 100px;
+    /* Scale the logo */
+    width: 20%;
+    /* Set a proportional width */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+@media (min-width: 768px) {
+    .footer-logo {
+        width: 10%;
+        /* Adjust logo size for medium and larger screens */
+    }
+}
+
+/* Footer Logo */
+.footer-logo {
+    max-width: 100px;
+    height: auto;
 }
