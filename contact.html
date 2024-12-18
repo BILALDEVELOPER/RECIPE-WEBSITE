@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
         integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -60,6 +60,62 @@
         </div>
     </nav>
 
+    <!-- CONTACT FORM -->
+
+    <div class="container">
+        <div class="row mt-5 px-md-0 px-2 ">
+            <h2 class="contact-heading mt-3 mb-4 ps-0">Contact</h2>
+            <div class="col-md-6 mt-md-0 mt-3 order-md-1 order-2 contact-form py-4 px-3">
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="firstname" class="form-label">FIRST NAME</label>
+                        <input type="text" class="form-control" id="firstname">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="lastname" class="form-label">LAST NAME</label>
+                        <input type="text" class="form-control" id="lastname">
+                    </div>
+                </div>
+                <label for="email" class="form-label">EMAIL</label>
+                <input type="email" class="form-control" id="email">
+                <label for="customDropdown" class="form-label">REASON FOR CONTACT</label>
+                <select id="customDropdown" class="form-select">
+                    <option></option>
+                    <option>Just wanted to say hi!</option>
+                    <option>I have a question about a recipe.</option>
+                    <option>How do I get started with my food blog?</option>
+                    <option>How do I improve my food photos?</option>
+                    <option>Can I use your pictures and/or recipes?</option>
+                    <option>Do you do consulting for other bloggers?</option>
+                    <option>I have a question about one of your ebooks.</option>
+                    <option>I want to partner with you on sponsored content.</option>
+                    <option>Other</option>
+                </select>
+                <label for="message">MESSAGE</label>
+                <textarea class="form-control" id="message" rows="4"></textarea>
+                <button class="btns">SEND MESSAGE</button>
+            </div>
+            <div class="col-md-6 order-md-2 order-1 coloe text-center d-flex flex-column align-items-center justify-content-start">
+                <div class="imgg">
+                    <img src="https://pinchofyum.com/wp-content/assets/images/sidebar/sidebar-lindsay.jpg"
+                        class="img-fluid" alt="about-img-3">
+                </div>
+                <div class="p-3">
+                    <h2 class="font4 m-0 mt-4">Hi! I’m Lindsay.</h4>
+                        <p class="font5 m-0">Nice to Meet You!</p>
+                        <p class="font6">
+                            I’m a former 4th grade teacher, now full-time blogger. My husband Bjork and I live in
+                            Minnesota. Favorite things include my camera, lake days, and dark chocolate.
+                        </p>
+                        <div class="text-center">
+                            <a href="about.html" class="butns px-lg-4 px-3 py-1 mb-4 py-lg-2">LEARN MORE</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
 
 
 
@@ -71,116 +127,118 @@
 
 
 
-     <!-- FOOTER -->
 
-     <div class="custom mb-3 mt-5"></div>
+    <!-- FOOTER -->
 
+    <div class="custom mb-3 mt-5"></div>
 
-     <footer>
-         <div class="container mt-4">
-             <!-- Main Footer Row -->
-             <div class="row">
-                 <!-- Section 1: Links -->
-                 <div class="col-md-3 text-md-start text-center">
-                     <h5>PINCH OF YUM</h5>
-                     <a href="about.html" class="d-block">About</a>
-                     <a href="recipe.html" class="d-block">Recipe</a>
-                     <a href="contact.html" class="d-block">Contact</a>
-                 </div>
-                 <!-- Section 2: Food & Recipes -->
-                 <div class="col-md-3 text-md-start text-center">
-                     <h5 class="mt-md-0 mt-3">FOOD & RECIPES</h5>
-                     <a href="holidayseries.html" class="">Holiday Series</a>
-                     <a href="fall.html" class="d-block">Fall</a>
-                     <a href="salads.html" class="d-block">Salads</a>
-                     <a href="casserole.html" class="d-block">Casserole</a>
-                     <a href="quick&easy.html" class="d-block">Quick & Easy</a>
-                     <a href="vegeterian.html" class="d-block">Vegetarian</a>
-                     <a href="healthy.html" class="d-block">Healthy</a>
-                     <a href="soups.html" class="d-block">Soups</a>
-                 </div>
-                 <!-- Section 3: Email Signup & Brands -->
-                 <div class="col-md-6 d-md-block d-none px-md-0">
-                     <div class="backg px-xl-5 px-lg-4 px-3 pt-lg-2 pb-lg-4 pb-3">
-                         <div class="line text-white pb-lg-3 pb-2 d-flex justify-content-center align-items-center">
-                             <p class="m-0 me-2 fan">Signup</p>
-                             <h5 class="m-0 fans">FOR EMAIL UPDATES</h5>
-                         </div>
-                         <span class="inkkput d-flex align-items-center">
-                             <input type="email" placeholder="Email" class="form-control">
-                             <button class="btn btn">Subscribe</button>
-                         </span>
-                     </div>
-                     <h5 class="text-uppercase foannt text-center pt-4 pb-3">our other brands</h5>
-                     <div class="d-flex justify-content-center">
-                         <img src="https://pinchofyum.com/wp-content/assets/images/food-blogger-pro-logo.png"
-                             class="imag1" alt="brand-1">
-                         <img src="https://pinchofyum.com/wp-content/assets/images/clariti-logo.svg" class="ms-4 imag2"
-                             alt="brand-2">
-                     </div>
-                 </div>
-             </div>
-         </div>
-         <div class="container">
-             <div class="row">
-                 <!-- Social Icons Row -->
-                 <div class="row m-0">
-                     <div class="col-12 mt-md-2 mt-4 iconnns d-flex justify-content-md-start justify-content-center">
-                         <div class="boar">
-                             <i class="fa-brands fa-facebook"></i>
-                         </div>
-                         <div class="boar ms-md-2 ms-1">
-                             <i class="fa-brands fa-instagram"></i>
-                         </div>
-                         <div class="boar ms-md-2 ms-1">
-                             <i class="fa-brands fa-pinterest"></i>
-                         </div>
-                         <div class="boar ms-md-2 ms-1">
-                             <i class="fa-brands fa-tiktok"></i>
-                         </div>
-                         <div class="boar ms-md-2 ms-1">
-                             <i class="fa-brands fa-twitter"></i>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-         </div>
-         <div class="container">
-             <!-- Footer Bottom Row -->
-             <div class="row">
-                 <div
-                     class="col-12 pt-4 d-flex flex-column flex-md-row justify-content-md-start justify-content-center align-items-center text-center text-md-start">
-                     <img src="images/logo.png" alt="logo" class="footer-logo mb-2 mb-md-0">
-                     <p class="foant footer-text mb-md-0 ms-md-3 ms-0">
-                         © 2024 FLAVORS. All Rights Reserved.<br>
-                         A Raptive Partner Site.
-                     </p>
-                 </div>
-             </div>
-         </div>
-         <div class="container">
-             <!-- Privacy & Terms Row -->
-             <div class="row">
-                 <div class="col-12 last text-center pb-4">
-                     <a href="privacypolicy.html">Privacy Policy</a>
-                     <a href="terms.html" class="ms-3">Terms</a>
-                 </div>
-             </div>
-         </div>
-     </footer>
- 
- 
-     <script>
-         function closenav() {
-             document.getElementById('closenavbar').remove();
-         }
-     </script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/js/all.min.js"
-         integrity="sha512-1JkMy1LR9bTo3psH+H4SV5bO2dFylgOy+UJhMus1zF4VEFuZVu5lsi4I6iIndE4N9p01z1554ZDcvMSjMaqCBQ=="
-         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-         crossorigin="anonymous"></script>
- </body>
- 
- </html>
+    <footer>
+        <div class="container mt-4">
+            <!-- Main Footer Row -->
+            <div class="row d-flex justify-content-evenly">
+                <!-- Section 1: Links -->
+                <div class="col-md-3 col-6 text-md-start ">
+                    <h5>PINCH OF YUM</h5>
+                    <a href="about.html" class="d-block">About</a>
+                    <a href="recipe.html" class="d-block">Recipe</a>
+                    <a href="contact.html" class="d-block">Contact</a>
+                </div>
+                <!-- Section 2: Food & Recipes -->
+                <div class="col-md-3 col-6  text-md-start">
+                    <h5 class="">FOOD & RECIPES</h5>
+                    <a href="holidayseries.html" class="">Holiday Series</a>
+                    <a href="fall.html" class="d-block">Fall</a>
+                    <a href="salads.html" class="d-block">Salads</a>
+                    <a href="casserole.html" class="d-block">Casserole</a>
+                    <a href="quick&easy.html" class="d-block">Quick & Easy</a>
+                    <a href="vegeterian.html" class="d-block">Vegetarian</a>
+                    <a href="healthy.html" class="d-block">Healthy</a>
+                    <a href="soups.html" class="d-block">Soups</a>
+                </div>
+                <!-- Section 3: Email Signup & Brands -->
+                <div class="col-md-5 d-md-block d-none px-md-0">
+                    <div class="line text-white pb-lg-3 pb-2 d-flex justify-content-center align-items-center">
+                        <p class="m-0 me-2 fan text-center mb-0">
+                            Subscribe to the best <br> recipes feed.
+                        </p>
+                    </div>
+                    <div class="inkkput d-flex flex-column flex-sm-row justify-content-center align-items-center">
+                        <input type="email" placeholder="Email" class="form-control mb-2 mb-sm-0">
+                        <button class="btn btn"><i class="fa-regular fa-paper-plane"></i></button>
+                    </div>
+                    <div class="form-check d-flex justify-content-center align-items-center p-0">
+                        <input class="form-check-input mt-4" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label labelofcheck mt-4 ms-2" for="flexCheckDefault">
+                            I've read and accept the <a href="privacypolicy.html">Privacy Policy</a>
+                        </label>
+                    </div>
+                </div>
+                <!-- Social Icons Row -->
+                <div class="col-md-6">
+                    <div class="mt-md-0 mt-4  iconnns d-flex justify-content-md-start justify-content-center">
+                        <div class="boar">
+                            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-facebook fs-3 mt-1"></i>
+                            </a>
+                        </div>
+                        <div class="boar ms-2">
+                            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-instagram fs-3 mt-1"></i>
+                            </a>
+                        </div>
+                        <div class="boar ms-2">
+                            <a href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-pinterest fs-3 mt-1"></i>
+                            </a>
+                        </div>
+                        <div class="boar ms-2">
+                            <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-tiktok fs-3 mt-1"></i>
+                            </a>
+                        </div>
+                        <div class="boar ms-2">
+                            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-twitter fs-3 mt-1"></i>
+                            </a>
+                        </div>                        
+                    </div>
+                    <div
+                        class="pt-4 d-flex flex-sm-row flex-column justify-content-md-start justify-content-center align-items-center text-center text-md-start">
+                        <img src="images/logo.png" alt="logo" class="footer-logo mb-2 mb-md-0">
+                        <p class="foant footer-text mb-md-0 ms-md-3 ms-0">
+                            © 2024 FLAVORS. All Rights Reserved.<br>
+                            A Raptive Partner Site.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 d-md-block d-none">
+                    <h5 class="text-uppercase foannt text-center pb-2">our other brands</h5>
+                    <div class="d-flex justify-content-center flex-wrap gap-3">
+                        <img src="https://pinchofyum.com/wp-content/assets/images/food-blogger-pro-logo.png"
+                            class="imag1" alt="brand-1">
+                        <img src="https://pinchofyum.com/wp-content/assets/images/clariti-logo.svg" class="imag2"
+                            alt="brand-2">
+                    </div>
+                </div>
+                <div class="col-12 last text-center py-4">
+                    <a href="privacypolicy.html">Privacy Policy</a>
+                    <a href="terms.html" class="ms-3">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function closenav() {
+            document.getElementById('closenavbar').remove();
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/js/all.min.js"
+        integrity="sha512-1JkMy1LR9bTo3psH+H4SV5bO2dFylgOy+UJhMus1zF4VEFuZVu5lsi4I6iIndE4N9p01z1554ZDcvMSjMaqCBQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

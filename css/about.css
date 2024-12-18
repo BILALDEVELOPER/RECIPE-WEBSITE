@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* TOP */
+
+.topline {
+    width: 100%;
+    background-color: #054B55;
+    color: #f8cbd2;
+}
+
+.fa-heart {
+    font-size: 13px !important;
+}
+
+.topline p {
+    font-family: "Garnet Capitals";
+}
+
+.topline a {
+    text-decoration: none;
+    color: white;
+    font-family: "Garnet Capitals";
+}
+
+.close {
+    font-size: 18px;
+    color: aliceblue;
+}
+
+/* NAVBAR */
+
+.navbar {
+    border-bottom: 1px solid #054B55;
+}
+
+.navbar ul li a {
+    color: black;
+    font-family: "Garnet Capitals";
+    font-size: 1rem;
+}
+
+/* QUOTE */
+
+.quote .fonta {
+    font-family: "Arvo";
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 0.9rem;
+}
+
+.quote .fontb {
+    font-family: "Shadows Into Light";
+    font-size: 2rem;
+    word-spacing: 0.2rem;
+    color: #054B55;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+.custom{
+    border-top: 1px solid #036D73;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+    margin-bottom: 0;
+    font-family: "Bitter";
+    color: rgb(96, 96, 96);
+    font-size: 15px;
+}
+
+footer h5 {
+    font-family: "Arvo";
+    font-size: 15px;
+}
+
+footer .container {
+    padding: 0rem 8rem;
+}
+
+@media only screen and (max-width: 1200px) {
+    footer .container {
+        padding: 0rem 5rem;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    footer .container {
+        padding: 0rem 1rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    footer .container {
+        padding: 0rem 2rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    footer .container {
+        padding: 0rem 1rem;
+    }
+}
+/* Subscribe Section */
+.fan {
+    font-family: "Arvo";
+    font-size: 1.3rem;
+    color: #036d73;
+}
+
+.labelofcheck {
+    font-family: "Bitter";
+    color: #828282;
+    font-size: 0.8rem;
+}
+
+.labelofcheck a {
+    color: #2f2d2d;
+    text-decoration: underline;
+}
+
+.labelofcheck a:hover {
+    color: #054B55;
+}
+
+.inkkput .form-control {
+    border-radius: 0.4rem !important;
+    width: 100%;
+    max-width: 320px;
+    border: none;
+    margin-right: 0.5rem;
+    height: 2.8rem;
+    background-color: #f4f4f4;
+    border: 1px solid #036d73;
+}
+
+.inkkput .form-control::placeholder {
+    font-family: "Bitter";
+    font-size: 1.1rem;
+}
+
+.inkkput .btn {
+    border-radius: 0.4rem !important;
+    font-size: 25px;
+    height: 2.8rem;
+    white-space: nowrap;
+    background-color: #fcc6ce;
+    color: white;
+    border: 0;
+    font-family: "Garnet Capitals";
+    transition: 0.5s;
+}
+
+.inkkput .btn:hover {
+    background-color: #f7dade;
+    color: white;
+    font-family: "Garnet Capitals";
+    transition: 0.5s;
+}
+
+/* Brand Images */
+.imag1,
+.imag2 {
+    width: 50%; /* Default width for small screens */
+    height: auto;
+    margin-bottom: 10px; /* Default spacing */
+}
+
+@media (min-width: 576px) {
+    .imag1,
+    .imag2 {
+        width: 30%; /* Adjust for larger phones */
+    }
+}
+
+@media (min-width: 768px) {
+    .imag1,
+    .imag2 {
+        width: 25%; /* Adjust for tablets */
+    }
+}
+
+@media (min-width: 992px) {
+    .imag1,
+    .imag2 {
+        width: 18%; /* Adjust for desktops and above */
+        margin-bottom: 20px; /* Increase spacing for larger screens */
+    }
+}
+
+.foannt {
+    font-size: 0.8rem;
+    color: #333;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.iconnns {
+    font-size: 30px;
+    color: white;
+}
+
+.iconnns .boar {
+    border-radius: 50%;
+    background-color: #036D73;
+    padding: 0 0.9rem;
+    cursor: pointer;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconnns .boar a{
+    color: white;
+    text-decoration: none;
+}
+
+.iconnns .boar:hover {
+    background-color: #818080;
+}
+
+.foant {
+    font-family: "Bitter";
+    font-size: 13px !important;
+    color: #6c6c6c;
+}
+
+.last a {
+    font-family: "Bitter";
+    font-size: 14px;
+}
+
+.footer-logo {
+    width: 80px; /* Adjust size for logo */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.footer-text {
+    font-size: 0.9rem; /* Responsive font size */
+    color: #666; /* Optional: Adjust text color */
+}

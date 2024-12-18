@@ -697,20 +697,84 @@
     transition: color 0.3s ease;
 }
 
-.fan {
+.bg .fanss{
     font-family: "Shadows Into Light";
     font-size: 35px;
 }
 
-.fans {
+.bg .fansss{
     font-family: "Arvo";
-    font-size: 16px;
+    font-size: 20px;
 }
+
+/* TESTIMONIALS */
+
+.testimonial h2{
+    font-family: "Garnet Capitals";
+}
+
+/* General Testimonial Section Styles */
+.testimonial .card-img-top {
+    border-radius: 50% !important;
+    width: 30% !important;
+    height: auto;
+    object-fit: cover; /* Ensures consistent scaling of images */
+}
+
+.testimonial .card {
+    border-radius: 10%;
+    background-color: #f7dade;
+    color: #818080;
+    cursor: pointer;
+    border: none;
+    transition: transform 0.3s ease-in-out;
+    max-width: 320px; /* Limits card width for large screens */
+    text-align: start;
+}
+
+.testimonial .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.testimonial .card-title {
+    font-family: "Garnet Capitals", serif;
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #00929a;
+}
+
+.testimonial .card-text {
+    font-family: "Bitter", serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #818080;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .testimonial .card-img-top {
+        width: 60%; /* Larger image for smaller screens */
+    }
+    .testimonial .card {
+        margin: 1rem auto; /* Adds spacing between cards */
+    }
+}
+
+@media (max-width: 576px) {
+    .testimonial .card-img-top {
+        width: 70%; /* Larger image for extra small screens */
+    }
+    .testimonial h2 {
+        font-size: 1.75rem; /* Smaller title size */
+    }
+}
+
 
 /* FOOTER */
 
 .custom{
-    border: 1px solid #036D73;
+    border-top: 1px solid #036D73;
 }
 
 footer a {
@@ -754,23 +818,48 @@ footer .container {
         padding: 0rem 1rem;
     }
 }
+/* Subscribe Section */
+.fan {
+    font-family: "Arvo";
+    font-size: 1.3rem;
+    color: #036d73;
+}
 
-.backg {
-    background-color: #036D73;
+.labelofcheck {
+    font-family: "Bitter";
+    color: #828282;
+    font-size: 0.8rem;
+}
+
+.labelofcheck a {
+    color: #2f2d2d;
+    text-decoration: underline;
+}
+
+.labelofcheck a:hover {
+    color: #054B55;
 }
 
 .inkkput .form-control {
-    border-radius: 0 !important;
-    margin-right: 5px;
+    border-radius: 0.4rem !important;
+    width: 100%;
+    max-width: 320px;
+    border: none;
+    margin-right: 0.5rem;
+    height: 2.8rem;
+    background-color: #f4f4f4;
+    border: 1px solid #036d73;
 }
 
 .inkkput .form-control::placeholder {
     font-family: "Bitter";
+    font-size: 1.1rem;
 }
 
 .inkkput .btn {
-    border-radius: 0 !important;
-    height: 100%;
+    border-radius: 0.4rem !important;
+    font-size: 25px;
+    height: 2.8rem;
     white-space: nowrap;
     background-color: #fcc6ce;
     color: white;
@@ -786,55 +875,43 @@ footer .container {
     transition: 0.5s;
 }
 
-@media (max-width: 576px) {
-    .inkkput {
-        flex-direction: column;
-    }
-
-    .inkkput .form-control,
-    .inkkput .btn {
-        margin-bottom: 5px;
-        width: 100%;
-    }
-}
-
-.foannt {
-    font-size: 15px;
-}
-
+/* Brand Images */
 .imag1,
 .imag2 {
-    width: 100%;
-    /* Default for small screens */
-    max-width: 100%;
+    width: 50%; /* Default width for small screens */
     height: auto;
-    /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Default spacing */
 }
 
 @media (min-width: 576px) {
-    .imag1 {
-        width: 15%;
-        /* Adjust for larger screens */
-    }
-
+    .imag1,
     .imag2 {
-        width: 40%;
-        /* Adjust for larger screens */
+        width: 30%; /* Adjust for larger phones */
+    }
+}
+
+@media (min-width: 768px) {
+    .imag1,
+    .imag2 {
+        width: 25%; /* Adjust for tablets */
     }
 }
 
 @media (min-width: 992px) {
-    .imag1 {
-        width: 12%;
-        /* Original width for wider screens */
-    }
-
+    .imag1,
     .imag2 {
-        width: 30%;
-        /* Original width for wider screens */
+        width: 18%; /* Adjust for desktops and above */
+        margin-bottom: 20px; /* Increase spacing for larger screens */
     }
 }
 
+.foannt {
+    font-size: 0.8rem;
+    color: #333;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
 
 .iconnns {
     font-size: 30px;
@@ -844,8 +921,18 @@ footer .container {
 .iconnns .boar {
     border-radius: 50%;
     background-color: #036D73;
-    padding: 0 0.5rem;
+    padding: 0 0.9rem;
     cursor: pointer;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconnns .boar a{
+    color: white;
+    text-decoration: none;
 }
 
 .iconnns .boar:hover {
@@ -864,23 +951,11 @@ footer .container {
 }
 
 .footer-logo {
-    max-width: 100px;
-    /* Scale the logo */
-    width: 20%;
-    /* Set a proportional width */
-    height: auto;
-    /* Maintain aspect ratio */
+    width: 80px; /* Adjust size for logo */
+    height: auto; /* Maintain aspect ratio */
 }
 
-@media (min-width: 768px) {
-    .footer-logo {
-        width: 10%;
-        /* Adjust logo size for medium and larger screens */
-    }
-}
-
-/* Footer Logo */
-.footer-logo {
-    max-width: 100px;
-    height: auto;
+.footer-text {
+    font-size: 0.9rem; /* Responsive font size */
+    color: #666; /* Optional: Adjust text color */
 }
