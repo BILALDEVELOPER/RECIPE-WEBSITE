@@ -4,6 +4,32 @@
     box-sizing: border-box;
 }
 
+.container {
+    padding: 0rem 8rem !important   ;
+}
+
+.container-lg {
+    padding: 0rem 8rem !important;
+}
+
+@media only screen and (max-width: 1200px) {
+.container {
+        padding: 0rem 4rem !important;
+    }
+    .container-lg {
+        padding: 0rem 4rem !important;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+.container {
+        padding: 0rem 1rem !important;
+    }
+    .container-lg {
+        padding: 0rem 1rem !important;
+    }
+}
+
 /* TOP */
 
 .topline {
@@ -59,11 +85,173 @@
     color: #054B55;
 }
 
+/* TOP SECTION */
 
+.container .parent {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.parent .image {
+    width: 100%;
+    height: 40rem;
+    object-fit: cover;
+}
 
+@media screen and (max-width: 992px) {
+    .container .image {
+        height: 35rem; /* Adjusted for smaller screens */
+    }
 
+    .parent .image {
+        width: 100%;
+        height: 33rem;
+        object-fit: cover;
+    }
 
+    .content .heading {
+        font-size: 2.3rem !important;
+    }
+    .content .line1 {
+        font-size: 0.9rem !important;
+    }
+    .content .line2 {
+        font-size: 2rem !important;
+    }
+    .content .para {
+        font-size: 0.9rem;
+        line-height: 1.3rem !important; 
+        margin-bottom: 0.8rem;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .content {
+        text-align: center;
+    }
+
+    .parent .image {
+        width: 100%;
+        height: 25rem;
+        object-fit: cover;
+    }
+
+    .content .heading {
+        font-size: 2.5rem;
+    }
+    .content .line1 {
+        font-size: 1rem;
+    }
+    .content .line2 {
+        font-size: 2rem;
+    }
+    .content .para {
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+    }
+
+}
+
+.content .heading {
+    font-family: "Copyright klim Type Foundary";
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.content .line1 {
+    font-family: "Arvo";
+    font-size: 1.1rem;
+}
+
+.content .line2 {
+    font-family: "Shadows Into Light";
+    font-size: 2.8rem;
+}
+
+.content .para {
+    font-family: "Bitter";
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+/* POSTER */
+
+.bg {
+    background-color: #036D73;
+    padding: 20px 0;
+}
+
+.posterfont {
+    font-family: "Arvo", serif;
+    font-size: 1rem;
+    color: white;
+    text-transform: uppercase;
+}
+
+.icon {
+    color: #036D73;
+    font-size: 25px;
+}
+
+:root {
+    --paren-bg-color: white;
+    --paren-hover-bg-color: #00929a;
+    --paren-icon-color: #036D73;
+    --paren-hover-icon-color: white;
+}
+
+.paren {
+    background-color: var(--paren-bg-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.paren:hover {
+    transform: scale(1.1);
+}
+
+.paren i {
+    color: var(--paren-icon-color);
+    transition: color 0.3s ease;
+}
+
+.bg .fanss{
+    font-family: "Shadows Into Light";
+    font-size: 35px;
+}
+
+.bg .fansss{
+    font-family: "Arvo";
+    font-size: 20px;
+}
+
+/* TEXT SECTION */
+
+.text-area .font{
+    font-family: "Garnet Capitals";
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.text-area .font-para{
+    font-family: "Bitter";
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.text-area .font-para a{
+    color: white;
+    background-color: #f8cbd2;
+}
 
 
 
@@ -125,7 +313,7 @@
 
 /* FOOTER */
 
-.custom{
+.custom {
     border-top: 1px solid #036D73;
 }
 
@@ -170,6 +358,7 @@ footer .container {
         padding: 0rem 1rem;
     }
 }
+
 /* Subscribe Section */
 .fan {
     font-family: "Arvo";
@@ -230,30 +419,39 @@ footer .container {
 /* Brand Images */
 .imag1,
 .imag2 {
-    width: 50%; /* Default width for small screens */
+    width: 50%;
+    /* Default width for small screens */
     height: auto;
-    margin-bottom: 10px; /* Default spacing */
+    margin-bottom: 10px;
+    /* Default spacing */
 }
 
 @media (min-width: 576px) {
+
     .imag1,
     .imag2 {
-        width: 30%; /* Adjust for larger phones */
+        width: 30%;
+        /* Adjust for larger phones */
     }
 }
 
 @media (min-width: 768px) {
+
     .imag1,
     .imag2 {
-        width: 25%; /* Adjust for tablets */
+        width: 25%;
+        /* Adjust for tablets */
     }
 }
 
 @media (min-width: 992px) {
+
     .imag1,
     .imag2 {
-        width: 18%; /* Adjust for desktops and above */
-        margin-bottom: 20px; /* Increase spacing for larger screens */
+        width: 18%;
+        /* Adjust for desktops and above */
+        margin-bottom: 20px;
+        /* Increase spacing for larger screens */
     }
 }
 
@@ -282,7 +480,7 @@ footer .container {
     justify-content: center;
 }
 
-.iconnns .boar a{
+.iconnns .boar a {
     color: white;
     text-decoration: none;
 }
@@ -303,11 +501,15 @@ footer .container {
 }
 
 .footer-logo {
-    width: 80px; /* Adjust size for logo */
-    height: auto; /* Maintain aspect ratio */
+    width: 80px;
+    /* Adjust size for logo */
+    height: auto;
+    /* Maintain aspect ratio */
 }
 
 .footer-text {
-    font-size: 0.9rem; /* Responsive font size */
-    color: #666; /* Optional: Adjust text color */
+    font-size: 0.9rem;
+    /* Responsive font size */
+    color: #666;
+    /* Optional: Adjust text color */
 }

@@ -4,11 +4,34 @@
     box-sizing: border-box;
 }
 
-@media (min-width: 1200px) {
+.container {
+    padding: 0rem 8rem !important;
+}
+
+.container-lg {
+    padding: 0rem 8rem !important;
+}
+
+@media only screen and (max-width: 1200px) {
     .container {
-        padding: 0 5rem !important; /* Default padding for large screens */
+        padding: 0rem 4rem !important;
+    }
+
+    .container-lg {
+        padding: 0rem 4rem !important;
     }
 }
+
+@media only screen and (max-width: 992px) {
+    .container {
+        padding: 0rem 1rem !important;
+    }
+
+    .container-lg {
+        padding: 0rem 1rem !important;
+    }
+}
+
 
 /* TOP */
 
@@ -67,7 +90,7 @@
 
 /* CONTACT FORM */
 
-.contact-heading{
+.contact-heading {
     font-family: "Copyright Klim Type Foundry";
     font-size: 42px;
     font-weight: 600;
@@ -82,19 +105,43 @@
     font-family: "Bitter Thin";
     font-size: 14px;
     color: #054B55;
-    margin-bottom: 0.7rem;
+    margin-bottom: 0.8rem !important;
 }
 
-.contact-form .form-control, .contact-form .form-select {
+.contact-form .form-control,
+.contact-form .form-select {
     border-radius: 0;
     border: 1px solid #acacac;
     height: 3rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.3rem !important;
 }
 
 #message {
     height: 12rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2.4rem !important;
+}
+
+@media only screen and (max-width: 1200px) {
+    .contact-form label {
+        font-family: "Bitter Thin";
+        font-size: 14px;
+        color: #054B55;
+        margin-bottom: 0.5rem !important;
+    }
+
+    .contact-form .form-control,
+    .contact-form .form-select {
+        border-radius: 0;
+        border: 1px solid #acacac;
+        height: 3rem;
+        margin-bottom: 0.5rem !important;
+    }
+
+    #message {
+        height: 12rem;
+        margin-bottom: 2rem !important;
+    }
+
 }
 
 .contact-form .btns {
@@ -121,7 +168,8 @@
         margin-bottom: 0.5rem;
     }
 
-    .contact-form .form-control, .contact-form .form-select {
+    .contact-form .form-control,
+    .contact-form .form-select {
         height: 2.5rem;
         margin-bottom: 1rem;
     }
@@ -144,7 +192,8 @@
         margin-bottom: 0.6rem;
     }
 
-    .contact-form .form-control, .contact-form .form-select {
+    .contact-form .form-control,
+    .contact-form .form-select {
         height: 2.8rem;
         margin-bottom: 1.2rem;
     }
@@ -167,7 +216,8 @@
         margin-bottom: 0.7rem;
     }
 
-    .contact-form .form-control, .contact-form .form-select {
+    .contact-form .form-control,
+    .contact-form .form-select {
         height: 3rem;
         margin-bottom: 1.5rem;
     }
@@ -186,14 +236,54 @@
 
 /* ABOUT */
 
-.imgg{
-    width: 30%;
+.imgg {
+    width: 40%;
     overflow: hidden;
     border-radius: 50%;
 }
 
-.imgg img{
+.imgg img {
     object-fit: cover;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .imgg {
+        width: 28%;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+
+}
+
+@media only screen and (max-width: 591px) {
+
+    .imgg {
+        width: 40%;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+
+}
+
+@media only screen and (max-width: 567px) {
+
+    .imgg {
+        width: 50%;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+
+}
+
+@media only screen and (max-width: 443px) {
+
+    .imgg {
+        width: 58%;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+
 }
 
 .font4 {
@@ -228,7 +318,7 @@
 }
 
 .butns:hover {
- color: #383737;
+    color: #383737;
 
 }
 
@@ -303,7 +393,7 @@
 
 /* FOOTER */
 
-.custom{
+.custom {
     border-top: 1px solid #036D73;
 }
 
@@ -348,6 +438,7 @@ footer .container {
         padding: 0rem 1rem;
     }
 }
+
 /* Subscribe Section */
 .fan {
     font-family: "Arvo";
@@ -408,30 +499,39 @@ footer .container {
 /* Brand Images */
 .imag1,
 .imag2 {
-    width: 50%; /* Default width for small screens */
+    width: 50%;
+    /* Default width for small screens */
     height: auto;
-    margin-bottom: 10px; /* Default spacing */
+    margin-bottom: 10px;
+    /* Default spacing */
 }
 
 @media (min-width: 576px) {
+
     .imag1,
     .imag2 {
-        width: 30%; /* Adjust for larger phones */
+        width: 30%;
+        /* Adjust for larger phones */
     }
 }
 
 @media (min-width: 768px) {
+
     .imag1,
     .imag2 {
-        width: 25%; /* Adjust for tablets */
+        width: 25%;
+        /* Adjust for tablets */
     }
 }
 
 @media (min-width: 992px) {
+
     .imag1,
     .imag2 {
-        width: 18%; /* Adjust for desktops and above */
-        margin-bottom: 20px; /* Increase spacing for larger screens */
+        width: 18%;
+        /* Adjust for desktops and above */
+        margin-bottom: 20px;
+        /* Increase spacing for larger screens */
     }
 }
 
@@ -460,7 +560,7 @@ footer .container {
     justify-content: center;
 }
 
-.iconnns .boar a{
+.iconnns .boar a {
     color: white;
     text-decoration: none;
 }
@@ -481,11 +581,15 @@ footer .container {
 }
 
 .footer-logo {
-    width: 80px; /* Adjust size for logo */
-    height: auto; /* Maintain aspect ratio */
+    width: 80px;
+    /* Adjust size for logo */
+    height: auto;
+    /* Maintain aspect ratio */
 }
 
 .footer-text {
-    font-size: 0.9rem; /* Responsive font size */
-    color: #666; /* Optional: Adjust text color */
+    font-size: 0.9rem;
+    /* Responsive font size */
+    color: #666;
+    /* Optional: Adjust text color */
 }
