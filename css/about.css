@@ -502,7 +502,7 @@
 }
 
 .special-padding{
-padding: 0 6rem;
+padding: 0 12rem !important;
 }
 
 @media only screen and (max-width:1400px){
