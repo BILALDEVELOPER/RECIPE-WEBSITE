@@ -4,6 +4,33 @@
     box-sizing: border-box;
 }
 
+.container {
+    padding: 0rem 8rem !important   ;
+}
+
+.container-lg {
+    padding: 0rem 8rem !important;
+}
+
+@media only screen and (max-width: 1200px) {
+.container {
+        padding: 0rem 4rem !important;
+    }
+    .container-lg {
+        padding: 0rem 4rem !important;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+.container {
+        padding: 0rem 1rem !important;
+    }
+    .container-lg {
+        padding: 0rem 1rem !important;
+    }
+}
+
+
 /* TOP */
 
 .topline {
@@ -226,20 +253,6 @@
     color: white;
     background-color: #f8cbd2;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* TOP SECTION */
 

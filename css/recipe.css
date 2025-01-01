@@ -28,7 +28,7 @@
     .container-lg {
         padding: 0rem 1rem !important;
     }
-} 
+}
 
 /* TOP */
 
@@ -84,6 +84,33 @@
     word-spacing: 0.2rem;
     color: #054B55;
 }
+
+/* RECIPE SETION */
+
+.recipe-section .bg {
+    background-color: rgb(247 247 247);
+}
+
+.recipe-section h2 {
+    font-family: "Garnet Capitals";
+    font-size: 2rem;
+    color: #054B55;
+}
+
+.recipe-section strong {
+    font-family: "Copyright Klim Type Foundry";
+    font-size: 1.5rem;
+}
+
+.recipe-section .fa-star {
+    color: rgb(242, 185, 85 , 1);
+}
+
+.recipe-section span {
+    font-family: "Arvo";
+    font-size: 0.8rem;
+}
+
 
 
 

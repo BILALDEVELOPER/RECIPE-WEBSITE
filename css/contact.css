@@ -4,8 +4,9 @@
     box-sizing: border-box;
 }
 
+
 .container {
-    padding: 0rem 8rem !important;
+    padding: 0rem 8rem !important   ;
 }
 
 .container-lg {
@@ -13,24 +14,23 @@
 }
 
 @media only screen and (max-width: 1200px) {
-    .container {
+.container {
         padding: 0rem 4rem !important;
     }
-
     .container-lg {
         padding: 0rem 4rem !important;
     }
 }
 
 @media only screen and (max-width: 992px) {
-    .container {
+.container {
         padding: 0rem 1rem !important;
     }
-
     .container-lg {
         padding: 0rem 1rem !important;
     }
 }
+
 
 
 /* TOP */
