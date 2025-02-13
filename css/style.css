@@ -3,6 +3,37 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+@font-face {
+    font-family: 'Arvo'; /* Name you will use in CSS */
+    src: url('../FONTS/arvo-latin.woff2') format('woff2') /* Use the correct path and format */
+  }
+  @font-face {
+    font-family: 'Bitter Thin'; /* Name you will use in CSS */
+    src: url('../FONTS/bitter-latin-italic.woff2') format('woff2') /* Use the correct path and format */
+  }
+  @font-face {
+    font-family: 'Bitter'; /* Name you will use in CSS */
+    src: url('../FONTS/bitter-latin-regular.woff2') format('woff2') /* Use the correct path and format */
+  }
+  @font-face {
+    font-family: 'Bitter Thin'; /* Name you will use in CSS */
+    src: url('../FONTS/bitter-latin.woff2') format('woff2') /* Use the correct path and format */
+  }
+  @font-face {
+    font-family: 'Garnet Capitals'; /* Name you will use in CSS */
+    src: url('../FONTS/consul-sans.woff2') format('woff2') /* Use the correct path and format */
+  }
+  @font-face {
+    font-family: 'Copy Right Klim Type Foundry'; /* Name you will use in CSS */
+    src: url('../FONTS/domaine.woff2') format('woff2') /* Use the correct path and format */
+  }
+  @font-face {
+    font-family: 'Shadows Into Light'; /* Name you will use in CSS */
+    src: url('../FONTS/Shadows.woff2') format('woff2') /* Use the correct path and format */
+  }
+  
+  
 .container {
     padding: 0rem 8rem !important   ;
 }
