@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+a{
+    text-decoration: none !important;
+    color: black !important;
+}
 @font-face {
     font-family: 'Arvo'; /* Name you will use in CSS */
     src: url('../FONTS/arvo-latin.woff2') format('woff2') /* Use the correct path and format */
@@ -139,10 +143,28 @@
     font-size: 0.8rem;
 }
 
+.recipe-section .col-md-4 {
+    position: relative; /* Required for pseudo-element positioning */
+    background-color: rgba(255, 255, 255, 0.4); /* Light white overlay */
+    opacity: 1;
+    transition: opacity 0.3s ease; /* Smooth transition effect */
+}
 
+.recipe-section .col-md-4::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.4); /* Light white overlay */
+    opacity: 0; /* Initially invisible */
+    transition: opacity 0.3s ease; /* Smooth transition effect */
+}
 
-
-
+.recipe-section .col-md-4:hover::after {
+    opacity: 0.9; /* Visible on hover */
+}
 
 
 
