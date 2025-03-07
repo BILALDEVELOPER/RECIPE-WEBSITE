@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-a{
+.recipe-section a{
     text-decoration: none !important;
     color: black !important;
 }
@@ -89,6 +89,7 @@ a{
     color: aliceblue;
 }
 
+
 /* NAVBAR */
 
 .navbar {
@@ -165,67 +166,6 @@ a{
 .recipe-section .col-md-4:hover::after {
     opacity: 0.9; /* Visible on hover */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* FOOTER */
